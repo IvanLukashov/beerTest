@@ -50,5 +50,6 @@
 <script src="/material/js/material-dashboard.js?v=1.2.0"></script>
 <!-- Material Dashboard DEMO methods, don't include it in your project! -->
 <script src="/material/js/demo.js"></script>
+<script src="/js/common.js"></script>
 @yield('js')
 </html>

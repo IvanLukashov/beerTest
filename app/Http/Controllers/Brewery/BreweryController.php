@@ -27,8 +27,7 @@ class BreweryController extends Controller
     {
         $brewery = $this->brewery->getBreweries($request);
         $beer_types = BeerType::getMap();
-//        $brewery_name = Brewery::getMap()[$request->brewery_id];
-        return view('brewery.index')->with(compact('brewery', 'beer_types', 'brewery_name'));
+        return view('brewery.index')->with(compact('brewery', 'beer_types'));
     }
 
     /**

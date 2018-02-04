@@ -105,16 +105,3 @@
     </div>
 </div>
 @endsection
-@section('js')
-    <script>
-        $.ajaxSetup({
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-            }
-        });
-        $(document).on('click', '.beer-destroy', function(){
-            var destroy_id = $(this).data('id');
-            $('#form-destroy-'+destroy_id).submit()
-        });
-    </script>
-@endsection

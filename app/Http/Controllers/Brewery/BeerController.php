@@ -26,7 +26,6 @@ class BeerController extends Controller
      */
     public function index(Request $request)
     {
-//        $beer = $this->beer->with('type')->with('brewery')->get();
         $beer = $this->beer->getBreweries($request);
         $beer_types = BeerType::getMap();
         $breweries = Brewery::getMap();
